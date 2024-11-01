@@ -1,5 +1,64 @@
 # Changelog
 
+## [0.13.0](https://github.com/devflowinc/trieve/compare/v0.12.1...v0.13.0) (2024-11-01)
+
+
+### Features
+
+* able to update parameters, not able to see the changes in the ([44b1067](https://github.com/devflowinc/trieve/commit/44b10676b677712cb6ad5e1c0d44d100bbcfa8ef))
+* add example and update adapter to work ([5fc58fb](https://github.com/devflowinc/trieve/commit/5fc58fbd9415a8671d16da22bc20682310c88001))
+* add max req time so we don't stall out workers ever ([7fe1a49](https://github.com/devflowinc/trieve/commit/7fe1a49b0ac2ad613da71c2d0af806374617f5c6))
+* allow serialization of extra_params ([aa7a44b](https://github.com/devflowinc/trieve/commit/aa7a44ba3808b05f30b496fc52685bad1a4218c3))
+* better error message for average vector strategy ([4550234](https://github.com/devflowinc/trieve/commit/455023411828c043176519edf09559142551b333))
+* better tooltip component ([2f81c38](https://github.com/devflowinc/trieve/commit/2f81c386f85c7e521e26c12fb9a94e814f482bd3))
+* bulk delete chunks ([e65889a](https://github.com/devflowinc/trieve/commit/e65889a13715e8833e7cccfe0168b57c1fc966cc))
+* display all search parameters on the component page ([10af639](https://github.com/devflowinc/trieve/commit/10af639f6c90dd139d308f5de5c351263e853d42))
+* export TrieveDocument ([5bdcad5](https://github.com/devflowinc/trieve/commit/5bdcad5317bd43b9b9abeaa9dd178daa4e4bf68c))
+* jinja template to render the all component properties ([e3aef3e](https://github.com/devflowinc/trieve/commit/e3aef3e43c4fa2fb599c256834321d3e724e8c86))
+* make footer look better ([1682f3b](https://github.com/devflowinc/trieve/commit/1682f3b305d887eeee3a1f06caa7f4327c9988d3))
+* multistring input for default questions ([e4abc63](https://github.com/devflowinc/trieve/commit/e4abc6358ae9f5ee37f92d6c004f18e767d5af09))
+* page parameters viewable on the search page, initial styling ([7747182](https://github.com/devflowinc/trieve/commit/7747182edf97337134af5554d90fa3adc7e1f820))
+* public page back button ([7dcb165](https://github.com/devflowinc/trieve/commit/7dcb165be6dca480394b4e969688d5cb8d41ba63))
+* set defualt values in search UI ([3d35fd6](https://github.com/devflowinc/trieve/commit/3d35fd6edd1bf27512a9437a512ef3dcaa8672de))
+* trieve fumadocs adapter ([0c087fa](https://github.com/devflowinc/trieve/commit/0c087fa1fd9124053b827a549ad617de7cd8cc98))
+* updates to frontend propagate correctly to the rendered ([5811fd9](https://github.com/devflowinc/trieve/commit/5811fd9474787214bbec81723e6f2bdcb95076b7))
+* use proper struct for public page options ([a729c5f](https://github.com/devflowinc/trieve/commit/a729c5f9ce4278a6e894325870380534e937ffa0))
+
+
+### Enhacements
+
+* move number of retrievals for rag to llm settings ([16e4cd3](https://github.com/devflowinc/trieve/commit/16e4cd3c5d8f2d4e7405c0611e009ae374f10c9f))
+
+
+### Cleanup
+
+* clippy and lint ([d22dcf2](https://github.com/devflowinc/trieve/commit/d22dcf256affb06905f3b60a5dcd8f285ffd1880))
+* document how to change system prompt and other RAG settings in dashboard ([25b65ea](https://github.com/devflowinc/trieve/commit/25b65eaa877a95e885cb0a2bee93c6c476a1b93b))
+* ensure save button for dataset settings is visible ([424b1f8](https://github.com/devflowinc/trieve/commit/424b1f8030d8f2e768fe360de3ca9a9082fe5d23))
+* load-in css animation for search component ([0aa668a](https://github.com/devflowinc/trieve/commit/0aa668a0bcae6c6bd10441b2bf0bfc7b6cd5817e))
+* remove deprecated direction prop for tooltip ([9cd45f5](https://github.com/devflowinc/trieve/commit/9cd45f5e157bc769e357ab849b980dce3946a36c))
+* remove old search component syntax highlighted versions ([a28e78f](https://github.com/devflowinc/trieve/commit/a28e78f1f3a8b5a7fd15b8dbbedb0345232f2840))
+* typo ([370e0bd](https://github.com/devflowinc/trieve/commit/370e0bd2c69aac7cd3b31e7ea9318e03e2834957))
+* update to latest Qdrant Rust SDK client ([73f5254](https://github.com/devflowinc/trieve/commit/73f5254c7e8c3c31072d0a3c6b1ad33c6a9417a4))
+* use env's for search component example w/ local dev ([74da050](https://github.com/devflowinc/trieve/commit/74da050a06bc94c111847b2029146bf17c364790))
+
+
+### Bug Fixes
+
+* default params for search component ([2986d64](https://github.com/devflowinc/trieve/commit/2986d647131d3430b4ef75b04bfd76115cbabc17))
+* fixed bug when updating dataset settings ([6361201](https://github.com/devflowinc/trieve/commit/6361201cc8513c3e9dbfdf301623f0081cec8fa2))
+* hybrid search over groups is not properly returning the first chunk with a cross encoder score ([746d04b](https://github.com/devflowinc/trieve/commit/746d04b77f28c7a013fa408d1670aab0b97eee4d))
+* keep old api key if a new one is not provided ([3f1c709](https://github.com/devflowinc/trieve/commit/3f1c70979b93d02b8aca38a76f2ab5b508f10d15))
+* modal search position changing on height change + pre tags overflowing ([8e14ae2](https://github.com/devflowinc/trieve/commit/8e14ae21130a362c0d719ea4dbc51d886c6f9ebb))
+* properly update chunk full-stop instead of only in Qdrant for ([6b05342](https://github.com/devflowinc/trieve/commit/6b05342b497cfa5d46a566e76a864878d4406bec))
+* search/ai queries not showing ([c61da81](https://github.com/devflowinc/trieve/commit/c61da8123740aebaf344f09caeb395aaebf946cd))
+* update bundler ([c57520b](https://github.com/devflowinc/trieve/commit/c57520b007c90e1e8d169d17601aaeca486ccdf1))
+
+
+### Docs
+
+* Typo Fix ([83f79dd](https://github.com/devflowinc/trieve/commit/83f79dda0c8183b92ab94c108bd54195315e7d89))
+
 ## [0.12.1](https://github.com/devflowinc/trieve/compare/v0.12.0...v0.12.1) (2024-10-25)
 
 
