@@ -80,6 +80,7 @@ export const PublicPageSettings = () => {
 
   const publishDataset = async () => {
     const name = `${datasetId()}-pregenerated-search-component`;
+    console.log({ extraParams });
     if (!isPublic()) {
       const response = await trieve.fetch("/api/user/api_key", "post", {
         data: {
@@ -445,7 +446,7 @@ export const PublicPageSettings = () => {
             </div>
             <input
               placeholder="Search..."
-              value={""}
+              value={extraParams.placeholder || ""}
               onInput={(e) => {
                 setExtraParams("placeholder", e.currentTarget.value);
               }}
